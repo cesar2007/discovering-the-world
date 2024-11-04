@@ -12,34 +12,43 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
         <div class="navbar-left">
-            <img src="icono.png" alt="Icono" class="navbar-icon">
+          <img src="./assets/logo2.png" alt="Icono" class="navbar-icon">
         </div>
-        <div class="navbar-right">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="ms-auto">
             <button class="nav-button">Travels</button>
             <button class="nav-button">Offers</button>
             <button class="nav-button">My Account</button>
+          </div>
         </div>
+        
+      </div>
+        
     </nav>
 
-    <div class="main-container d-flex flex-column align-items-center pb-5">
+    <div class="container d-flex flex-column align-items-center pb-5">
       <div class="title mt-5 d-flex flex-column align-items-center">
           <div class="subtitle mb-3"><span class="bracket">[</span> Making your Life Easier <span class="bracket">] </span> </div>
           <div class="main-title m-0 p-0">Discovering the World</div>
       </div>
       <div class="d-flex justify-content-end w-100 me-5">
-        <button class="round-button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <button class="round-button" class="" data-bs-toggle="modal" data-bs-target="#createDestination">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
             <path d="M14.69 2.69a1 1 0 0 1 1.42 0l4.2 4.2a1 1 0 0 1 0 1.42l-10 10a1 1 0 0 1-.33.21l-4.5 1.5a1 1 0 0 1-1.26-1.26l1.5-4.5a1 1 0 0 1 .21-.33l10-10zM6.5 17.09l2.1 2.1M12.59 4.91l4.2 4.2"/>
         </svg>
         </button>
       </div>
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="createDestination" tabindex="-1" aria-labelledby="createDestinationLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Create new destination</h1>
+                <h1 class="modal-title fs-5" id="createDestinationLabel">Create new destination</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
@@ -85,6 +94,11 @@
                   <p class="card-text">Discover the vibrant islands with turquoise waters and sandy beaches, offering an ideal escape for relaxation and adventure alike. Perfect for a memorable tropical experience.</p>
                   <p class="card-text"><small>Last updated 5 mins ago</small></p>
                 </div>
+
+                <div class="card-buttons">
+                  <button class="round-button edit-button" data-bs-toggle="modal" data-bs-target="#editDestination">&#9998;</button>
+                  <button class="round-button delete-button" data-bs-toggle="modal" data-bs-target="#deleteDestination">&#10005;</button>
+                </div>
               </div>
           </div>
           <div class="card text-bg-dark">
@@ -97,6 +111,11 @@
                   <p class="card-text">Immerse yourself in the serene beauty of lush greenery, tranquil paths, and fresh, invigorating air. The forest invites you to reconnect with nature and find peace.</p>
                  <p class="card-text"><small>Last updated 10 mins ago</small></p>
                 </div>
+
+                <div class="card-buttons">
+                  <button class="round-button edit-button" data-bs-toggle="modal" data-bs-target="#editDestination">&#9998;</button>
+                  <button class="round-button delete-button" data-bs-toggle="modal" data-bs-target="#deleteDestination">&#10005;</button>
+                </div>
               </div>
           </div>
           <div class="card text-bg-dark">
@@ -108,7 +127,12 @@
                   <h5 class="card-title">Europe</h5>
                   <p class="card-text">Explore the rich culture, history, and architecture that make Europe an unforgettable destination. From ancient landmarks to modern art scenes, it has it all.</p>
                   <p class="card-text"><small>Last updated 5 mins ago</small></p>
-              </div>
+                </div>
+
+                <div class="card-buttons">
+                  <button class="round-button edit-button" data-bs-toggle="modal" data-bs-target="#editDestination">&#9998;</button>
+                  <button class="round-button delete-button" data-bs-toggle="modal" data-bs-target="#deleteDestination">&#10005;</button>
+                </div>
               </div>
           </div>
           <div class="card text-bg-dark">
@@ -121,9 +145,80 @@
                   <p class="card-text">Enjoy luxurious beachfront accommodations with breathtaking views, top-notch amenities, and relaxation guaranteed. The perfect getaway for a rejuvenating stay.</p>
                   <p class="card-text"><small>Last updated 3 days ago</small></p>
                 </div>
+
+                <div class="card-buttons">
+                  <button class="round-button edit-button" data-bs-toggle="modal" data-bs-target="#editDestination">&#9998;</button>
+                  <button class="round-button delete-button" data-bs-toggle="modal" data-bs-target="#deleteDestination">&#10005;</button>
+                </div>
               </div>
-          </div>  
+          </div>
+          <div class="card text-bg-dark">
+            <div class="image-overlay">
+              <img src="./assets/07-mountains.jpg" class="card-img" alt="...">
+            </div>
+              <div class="card-img-overlay px-0">
+                <div class="custom-title w-100 ">
+                  <h5 class="card-title">Mountains and Snow</h5>
+                  <p class="card-text">Immerse yourself in serene mountain retreats surrounded by snowy peaks and crisp, fresh air. Cozy up by the fire, indulge in world-class winter sports, and experience unmatched tranquility. The ultimate escape for adventure and relaxation.</p>
+                  <p class="card-text"><small>Last updated 3 days ago</small></p>
+                </div>
+
+                <div class="card-buttons">
+                  <button class="round-button edit-button" data-bs-toggle="modal" data-bs-target="#editDestination">&#9998;</button>
+                  <button class="round-button delete-button" data-bs-toggle="modal" data-bs-target="#deleteDestination">&#10005;</button>
+                </div>
+              </div>
+          </div>
+          
+          <div class="modal fade" id="editDestination" tabindex="-1" aria-labelledby="editDestinationLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="editDestinationLabel">Edit destination</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label class="form-label">Destination</label>
+                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Description</label>
+                      <input type="text" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3">
+                      <label for="photo" class="form-label">Upload Photo</label>
+                      <input type="file" class="form-control" id="photo" name="photo" accept="image/*" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+
       </div>
+      <div class="modal fade" id="deleteDestination" tabindex="-1" aria-labelledby="deleteDestinationLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="deleteDestinationLabel">Delete destination</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Do you want to delete this destination?</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Delete destination</button>
+            </div>
+          </div>
+        </div>
+    </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
