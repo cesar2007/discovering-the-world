@@ -1,0 +1,154 @@
+/* styles.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.navbar-right {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+.nav-button:hover {
+    background-color: #777;
+}
+
+.card {
+    height: 20rem;
+    width: 30rem;
+}
+
+.roboto-regular-small {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+  }
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.categories-filter button {
+    padding: 10px 20px;
+    border-radius: 3px;
+    border: none;
+    background-color: #ffffff;
+    color: #333;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    border-right: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+
+
+.categories-filter button:hover {
+    background-color: #ddd;
+}
+
+.categories-filter button.active {
+    background-color: #bec1c4; 
+}
+
+.subtitle {
+    font-size: 14px;
+    font-weight: 600;
+    color: orange;
+}
+
+.bracket {
+    font-size: 25px;
+}
+
+.main-title {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.round-button {
+    background-color: #ffa500;
+    border: none;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.round-button:hover {
+    background-color: #ff8c00;
+}
+
+.round-button svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor; 
+}
+
+.cards-container .card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0px;
+}
+
+.cards-container .card .card-img-overlay {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.custom-title {
+    background: rgba(207, 202, 202, 0.4);
+    padding: 10px;
+    
+    position: relative;
+    z-index: 1;
+    background-blend-mode: lighten;
+}
